@@ -6,6 +6,7 @@ import torch.optim as optim
 from torchvision import datasets, transforms
 from torch.optim.lr_scheduler import StepLR
 
+
 class Net(nn.Module):
     def __init__(self,):
         super().__init__()
@@ -15,7 +16,7 @@ class Net(nn.Module):
         self.fc1 = nn.Linear(9216, 128)
         self.drop2 = nn.Dropout(0.4)
         self.fc2 = nn.Linear(128, 10)
-    
+
     def forward(self, x):
         x = self.conv1(x)
         x = F.relu(x)
@@ -29,6 +30,3 @@ class Net(nn.Module):
         x = self.fc2(x)
         output = F.log_softmax(x, dim=1)
         return output
-
-    
-

@@ -47,7 +47,7 @@ class MNISTDigitClassifier(object):
         self.model.to(device=self.device)
         self.model.eval()
 
-        logger.debug('Model file {} loaded successfully'.format(model_pt_path)))
+        logger.debug("Model file {} loaded successfully".format(model_pt_path)))
         self.initialized = True
     
     def preprocess(self, data):
