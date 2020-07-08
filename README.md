@@ -1,5 +1,10 @@
 # Torch Serve
 
+## Installing Torch Serve: -
+- Refer to Torch serve [docs](https://github.com/pytorch/serve#install-torchserve)
+- Install both pytorch, torchvision and of course torch serve.
+
+## Tutorial how to deploy with Torch-Serve
 - Tutorial on how to run app using Torch-Serve
 - Most code is taken torchserve library from PyTorch.
 - Trains a simple MNIST Digit Classifer and deploy using TorchServe.
