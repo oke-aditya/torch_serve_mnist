@@ -16,9 +16,11 @@ Steps to take Model to Torch Serve: -
 - Train the model. I have provided the training script in `src/train.py`.
 - Write a custom Handler to preprocess the data to recongize the image.
 
+Note: - Currently Torch Serve Does not work on Windows. If it works do let me know.
+
 Now Use Torch Serve.
 
-1. `torch-model-archiver --model-name mnist --version 1.0 --model-file src/model.py --serialized-file src/model.pt --handler src/handler.py`
+1. ` torch-model-archiver --model-name mnist --version 1.0 --model-file .//src//model.py --serialized-file src//mnist_cnn.pt --handler .//src//handler.py`
 
 2. Register the model on TorchServe using the above model archive file and run digit recognition inference.
 
